@@ -33,33 +33,22 @@ const team = [
 ];
 
 //dato questo array, devo ora appendere in html ogni oggetto
-
+//creo ciclo for che inserisca in html degli elementi con all'interno gli oggetti
 for (let index = 1; index < team.length; index++) {
   let newCard = `<div class="team-card">
                 <div class="card-image">
                   <img
-                    src="img/${image}"
+                    src="img/${team[index].image}"
                     alt=""
                   />
                 </div>
                 <div class="card-text">
-                  <h3>${name}</h3>
-                  <p>${role}</p>
+                  <h3>${team[index].name}</h3>
+                  <p>${team[index].role}</p>
                 </div>
               </div>`;
               document.getElementById('team-container').innerHTML += newCard
 
 }
-// let newCard = `<div class="team-card">
-//                 <div class="card-image">
-//                   <img
-//                     src="img/wayne-barnett-founder-ceo.jpg"
-//                     alt="Wayne Barnett"
-//                   />
-//                 </div>
-//                 <div class="card-text">
-//                   <h3>Wayne Barnett</h3>
-//                   <p>Founder & CEO</p>
-//                 </div>
-//               </div>`;
+
 
