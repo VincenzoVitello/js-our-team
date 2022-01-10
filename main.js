@@ -33,3 +33,17 @@ const team = [
 ];
 
 //dato questo array, devo ora appendere in html ogni oggetto
+let newCard = `<div class="team-card">
+                <div class="card-image">
+                  <img
+                    src="img/wayne-barnett-founder-ceo.jpg"
+                    alt="Wayne Barnett"
+                  />
+                </div>
+                <div class="card-text">
+                  <h3>Wayne Barnett</h3>
+                  <p>Founder & CEO</p>
+                </div>
+              </div>`;
+
+document.getElementsByClassName('team-container').innerHTML += newCard
